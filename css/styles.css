@@ -9,26 +9,30 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background: #4ecdc4;
+  background: #000066;
   font-family: 'Josefin Slab', serif;
 }
 ::selection {
   color: #fff;
   background: #1f6e69;
 }
-.clear {
-  clear: both;
-  margin: 100px;
-}
-.clear::before {
-  content: " ";
+/*Banner intro*/
+#banner {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
+  text-align: center;
+  background: #35b88f url('images/banner.svg') bottom center no-repeat;
+  padding: 5em 0 5em 0;
+  margin: 0;
+  background-size: 125% auto;
 }
 #intro {
-  height: 100%;
+/*  height: 100%;*/
   color: #fff;
 }
 #intro h1 {
-  padding-top: 120px;
+  padding-top: 10px;
   font-family: "Cookie";
   font-size: 115px;
   text-align: center;
@@ -63,7 +67,7 @@ body {
   font-size: 85px;
   font-weight: normal;
   text-align: center;
-  text-shadow: 4px 4px 0px #2c9a93;
+  text-shadow: 2px 2px 0px #2c9a93;
 }
 #intro2-line4 {
   padding: 80px;
@@ -101,15 +105,16 @@ body {
 .friend .friend-admire {
   font-size: 12.5px;
   line-height: 2em;
-  font-weight: 500;
-  color: #333;
+  font-weight: 700;
+  color: #000000;
   width: 340px;
   padding: 20px;
 }
 .friend .friend-experience {
   margin-right: 20px;
   float: left;
-  background: #c7f464;
+/*  background: #c7f464;*/
+  background: #CCFFFF;
   box-shadow: 3px 3px 0px #72a10b;
 }
 .friend .friend-id {
@@ -126,25 +131,12 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/*Y U NO WORK!!!*/
-
-/*.friend .friend-name {
-  margin-top: 12px;
-  padding: 6px;
-  background: #ff6b6b;
-  box-shadow: 3px 3px 0px #b50000;
-  width: 88px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #fff;
-  text-align: left;
-}*/
 .friend .friend-admire {
   margin-left: 20px;
   float: right;
   text-align: right;
-  background: #f38630;
+  /*background: #f38630;*/
+  background: #CCFFFF;
   box-shadow: 3px 3px 0px #8a4108;
 }
 #one-word {
@@ -185,8 +177,8 @@ body {
   font-size: 20px;
 }
 .photo img {
-  width: 300px;
-  height: 300px;
+  width: 136px;
+  height: 103px;
 /*  -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;*/
@@ -216,12 +208,60 @@ body {
   margin-top: 120px;
 }
 .end-line .signature p {
-  font-size: 24px;
-  color: #c44d58;
+  font-size: 30px;
+  color: #FF3333;
+}
+.end-line h4 {
+  color: #FFFFCC;
 }
 
-/*Not a fan of animations*/
+/*Embarrassing photos*/
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+  /*oh hey responsive photos*/
+/*@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}*/
 
+/*Not a fan of animations*/
 @-webkit-keyframes arrow-bounce {
   0% {
     top: 0;
@@ -275,17 +315,9 @@ body {
   }
 }
 @-ms-keyframes arrow-bounce {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: 10px;
-  }
-
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: 10px; }
+  100% { top: 0; }
 }
 @keyframes arrow-bounce {
   0% {
