@@ -4,12 +4,13 @@
 <html>
 	<head>
 		<title>RJ's Birthday!</title>
-		<link href='//fonts.googleapis.com/css?family=Josefin+Slab|Cookie' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Slab|Cookie' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet"  href="fonts/css/font-awesome.min.css">
 		<link rel="stylesheet" href="animate.min.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css"
-		<script type="text/javascript" src="lib/jquery.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/audioplayer.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/audioplayer.js"></script>
 	</head>
 
 	<body>
@@ -17,10 +18,35 @@
 	<section id="banner">
 		<div id="intro">
 			<h1 class="animated bounceInDown">Happy 24th Birthday, RJ</h1>
-			<audio id="big-ben" controls preload loop>
-				<source src="audio/big-ben.ogg" type="audio/ogg">
-				<source src="audio/big-ben.mp3" type="audio/mpeg">
-			</audio>
+
+			<div class="audioplayer">
+				<audio preload="auto" controls style="width: 0px; height: 0px; visibility:hidden;">
+					<source src="audio/big-ben.ogg" type="audio/ogg">
+					<source src="audio/big-ben.mp3" type="audio/mpeg">
+				</audio>
+				<div="audioplayer-playpause" title="Play">
+					<a href="#"></a>
+				</div>
+				<div="audioplayer-time audioplayer-time-current"></div>
+				<div="audioplayer-bar">
+					<div="audioplayer-bar-loaded" style="width: 100%;"></div>
+					<div="audioplayer-bar-played"></div>
+				</div>
+				<div="audioplayer-time audioplayer-time-duration"></div>
+				<div="audioplayer-volume">
+					<div="audioplayer-volume-button" title="Volume">
+						<a href="#">
+						</a>
+					</div>
+					<div="audioplayer-volume-adjust">
+						<div>
+							<div style="height: 100%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>$(function(){$('audio').audioPlayer(); } );</script>
+			
 			<div id="intro-scroll">
 				<div id="intro-scroll-icon"><i class="fa fa-angle-down fa-lg"></i></div>
 			</div>

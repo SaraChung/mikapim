@@ -16,6 +16,7 @@ body {
   color: #fff;
   background: #1f6e69;
 }
+
 /*Banner intro*/
 #banner {
   position: relative;
@@ -113,7 +114,6 @@ body {
 .friend .friend-experience {
   margin-right: 20px;
   float: left;
-/*  background: #c7f464;*/
   background: #CCFFFF;
   box-shadow: 3px 3px 0px #72a10b;
 }
@@ -135,7 +135,6 @@ body {
   margin-left: 20px;
   float: right;
   text-align: right;
-  /*background: #f38630;*/
   background: #CCFFFF;
   box-shadow: 3px 3px 0px #8a4108;
 }
@@ -175,16 +174,6 @@ body {
   display: none;
   font-family: "Georgia";
   font-size: 20px;
-}
-.photo img {
-  width: 136px;
-  height: 103px;
-/*  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;*/
-  border: 2px solid #fff;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 .end-line {
   margin-top: 300px;
@@ -263,56 +252,24 @@ body {
 
 /*Not a fan of animations*/
 @-webkit-keyframes arrow-bounce {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: 10px;
-  }
-
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: 10px; }
+  100% { top: 0; }
 }
 @-moz-keyframes arrow-bounce {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: 10px;
-  }
-
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: 10px; }
+  100% { top: 0; }
 }
 @-webkit-keyframes arrow-bounce {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: 10px;
-  }
-
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: 10px; }
+  100% { top: 0; }
 }
 @-o-keyframes arrow-bounce {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: 10px;
-  }
-
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: 10px; }
+  100% { top: 0; }
 }
 @-ms-keyframes arrow-bounce {
   0% { top: 0; }
@@ -320,15 +277,7 @@ body {
   100% { top: 0; }
 }
 @keyframes arrow-bounce {
-  0% {
-    top: 0;
-  }
-
-  50% {
-    top: 10px;
-  }
-
-  100% {
-    top: 0;
-  }
+  0% { top: 0; }
+  50% { top: 10px; }
+  100% { top: 0; }
 }
